@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/chat_menu_find_friends"
+        android:title="Find Friends"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/chat_menu_settings"
+        android:title="Settings"
+        app:showAsAction="never"></item>
+
+</menu>

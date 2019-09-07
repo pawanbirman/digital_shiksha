@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/login_applogo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_result"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+         />
+
+    <Button
+        android:id="@+id/login_student_btn"
+        android:layout_below="@+id/login_applogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:padding="17dp"
+        android:onClick="loginStudent"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Student"
+        android:textColor="@android:color/black"
+        />
+
+
+    <Button
+        android:id="@+id/login_driver_btn"
+        android:layout_below="@+id/login_student_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:padding="17dp"
+        android:onClick="loginDriver"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Driver"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm an Admin?"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/login_driver_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:onClick="loginAdmin"
+        android:textStyle="bold"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp"
+        />
+
+</RelativeLayout>
