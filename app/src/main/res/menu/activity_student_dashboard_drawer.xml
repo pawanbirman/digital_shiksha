@@ -4,18 +4,22 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+
         <item
-            android:id="@+id/nav_syllabus"
-            android:icon="@drawable/ic_import_contacts_black_24dp"
-            android:title="Syllabus" />
+            android:id="@+id/nav_busLocation"
+            android:icon="@drawable/ic_direction_black_24dp"
+            android:title="Bus Location" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chatting Room" />
         <item
             android:id="@+id/nav_feesStructure"
             android:icon="@drawable/ic_attach_money_black_24dp"
             android:title="Fees Structure" />
-        <item
-            android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_chat_black_24dp"
-            android:title="Chat with School Staff" />
+
         <item
             android:id="@+id/nav_meetWithToppers"
             android:icon="@drawable/ic_career_24dp"
@@ -24,10 +28,12 @@
             android:id="@+id/nav_results"
             android:icon="@drawable/ic_result"
             android:title="Results" />
+
         <item
-            android:id="@+id/nav_busLocation"
-            android:icon="@drawable/ic_direction_black_24dp"
-            android:title="Bus Location" />
+            android:id="@+id/nav_syllabus"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="Syllabus" />
+
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_menu_manage"

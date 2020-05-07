@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.SettingsNewActivity">
+    <include
+        layout="@layout/app_bar_layout_chat"
+        android:id="@+id/settings_toolbar"
+        >
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/settings_toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/settings_profile_image"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/settings_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:hint="User Name"
+            android:background="@drawable/input_design"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/edit_profile"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/settings_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_full_name"
+            android:background="@drawable/input_design"
+            android:layout_marginLeft="7dp"
+            android:hint="hey, i am available now."
+            android:inputType="textMultiLine"
+            android:drawableStart="@drawable/edit_status"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+             />
+
+        <Button
+            android:id="@+id/settings_update"
+            android:layout_below="@+id/settings_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/buttons"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:text="Update"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

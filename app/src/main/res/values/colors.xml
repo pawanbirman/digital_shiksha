@@ -3,6 +3,8 @@
     <color name="colorPrimary">#bf007a</color>
     <color name="colorPrimaryDark">#BF007A</color>
     <color name="colorAccent">#08f7e3</color>
+    <color name="colorFcm">#ff9933</color>
 
     <color name="colorPrimaryFav">#003366</color>
+
 </resources>

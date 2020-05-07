@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Admin.AdminDashboardActivity"
+    tools:showIn="@layout/app_bar_admin_dashboard">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_syllabus_img"
+                        android:src="@drawable/ic_import_contacts_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_syllabus_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:text="Syllabus"
+                        android:textAlignment="center"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_toppers_img"
+                        android:src="@drawable/ic_toppers"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_toppers_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:text="Toppers"
+                        android:textAlignment="center"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_result_img"
+                        android:src="@drawable/ic_result"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_result_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:text="Result"
+                        android:textAlignment="center"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_find_all_bus_img"
+                        android:src="@drawable/ic_directions_bus_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_find_all_bus_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Find All BUS"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_add_driver_img"
+                        android:src="@drawable/profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_add_driver_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Add Driver"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admin_add_dashboard"
+                        android:src="@drawable/ic_services_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:id="@+id/admin_add_dashboard_txt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#BF007A"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Add On Dashboard"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

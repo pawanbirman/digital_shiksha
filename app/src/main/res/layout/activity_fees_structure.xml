@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.FeesStructureActivity">
+
+    <include
+        layout="@layout/app_bar_layout_chat"
+        android:id="@+id/settings_toolbar"
+        >
+    </include>
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/settings_toolbar"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:hint="Digital Shiksha is offering lowest fees as follows:"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*"
+            android:layout_below="@+id/welcome_msg">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Admission Fees"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tutation Fees"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 1"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class1AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class1TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 2"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class2AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class2TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 3"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class3AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class3TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 4"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class4AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class4TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 5"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class5AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class5TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 6"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class6AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class6TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 7"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class7AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class7TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 8"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class8AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class8TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 9"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class9AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class9TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 10"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class10AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class10TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 11"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class11AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class11TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="10dp"
+                    android:text="Class 12"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_status_show"
+                    android:textColor="@color/colorPrimaryFav"
+                    />
+
+                <TextView
+                    android:id="@+id/class12AF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="1000"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+                <TextView
+                    android:id="@+id/class12TF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_column="2"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:background="@drawable/custom_status_show"
+                    />
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

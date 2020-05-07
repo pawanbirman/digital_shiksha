@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "1007492406041-870na2eoo5kj639mrjm145c40ggcge51.apps.googleusercontent.com",
+          "client_id": "1007492406041-ucrs0gf07fd1fka3d6ohhmq05eq744eh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "quicksolution.digitalshiksha",
-            "certificate_hash": "d92b647d8e09a31b40438fa19ee618e034d32e3b"
+            "certificate_hash": "a0a2970dd0b538228923512f803f4acd764bb909"
           }
         },
         {
@@ -29,7 +29,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCdhzj_L5ZTlToH0KR_ZB1Sb1SoXY4dHiY"
+          "current_key": "AIzaSyBfuutyCAf6cFMxn9dc3UyMkSK5kXeRA7s"
         }
       ],
       "services": {
